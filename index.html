@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nattlig-puten — Puten som tilpasser seg nakken din</title>
+  <meta name="description" content="Nattlig-puten er fylt med minneskum. Du tar ut akkurat så mye du trenger — så høyden og fastheten passer DIN nakke. På siden, rygg eller mage. 90 netter prøv hjemme.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="bilder/wordmark-dark.jpg" type="image/jpeg">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="sticky top-0 bg-white z-40 header-shadow transition-all">
+  <div class="container-wide flex items-center justify-between py-4">
+    <a href="index.html" class="flex items-center">
+      <img src="bilder/wordmark-dark.jpg" alt="Nattlig" class="h-10 md:h-12">
+    </a>
+    <nav class="desktop-nav items-center gap-8">
+      <a href="pute.html" class="text-sm font-medium hover:text-nattlig">Puten</a>
+      <a href="om.html" class="text-sm font-medium hover:text-nattlig">Om</a>
+      <a href="faq.html" class="text-sm font-medium hover:text-nattlig">FAQ</a>
+      <a href="kontakt.html" class="text-sm font-medium hover:text-nattlig">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="pute.html" class="relative p-2">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 01-8 0"></path></svg>
+        <span data-cart-count class="absolute -top-1 -right-1 bg-nattlig text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center" style="display:none">0</span>
+      </a>
+      <button class="mobile-toggle p-2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+    </div>
+  </div>
+  <div class="mobile-menu border-t border-nattlig md:hidden">
+    <div class="container-wide py-4 flex flex-col gap-3">
+      <a href="pute.html" class="text-base font-medium py-1">Puten</a>
+      <a href="om.html" class="text-base font-medium py-1">Om</a>
+      <a href="faq.html" class="text-base font-medium py-1">FAQ</a>
+      <a href="kontakt.html" class="text-base font-medium py-1">Kontakt</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative pt-12 md:pt-20 pb-0 overflow-hidden bg-nattlig-soft">
+  <div class="container-wide">
+    <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-white px-3 py-1.5 rounded-full text-sm font-medium mb-6 border border-nattlig">
+          <span class="w-2 h-2 bg-nattlig rounded-full"></span>
+          Norsk-bygget · 90 netter prøv hjemme
+        </div>
+        <h1 class="font-display font-extrabold text-4xl md:text-5xl lg:text-6xl leading-[1.05] mb-6">
+          Puten som <span class="text-nattlig">tilpasser seg</span> nakken din.
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-xl">
+          Nattlig-puten er fylt med minneskum. Du tar ut akkurat så mye du trenger — så høyden og fastheten passer DIN nakke, uansett om du sover på siden, rygg eller mage. Putevaret har en behagelig kjøligere side.
+        </p>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <a href="#kjop" class="btn-primary">
+            Bestill Nattlig-puten — 899 kr
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#hvordan" class="btn-secondary">
+            Slik fungerer den
+          </a>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-600">
+          <span class="flex items-center gap-1.5"><span class="text-nattlig">✓</span> 90 netter prøv hjemme</span>
+          <span class="flex items-center gap-1.5"><span class="text-nattlig">✓</span> Gratis frakt</span>
+          <span class="flex items-center gap-1.5"><span class="text-nattlig">✓</span> Sendes innen 24t</span>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="bilder/lifestyle-kvinne.jpg" alt="Kvinne sover komfortabelt på Nattlig-puten"
+             class="rounded-2xl shadow-2xl w-full aspect-[4/5] object-cover">
+        <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 max-w-[280px]">
+          <div class="text-3xl">🛏️</div>
+          <div>
+            <div class="font-semibold text-sm">Justerbar 5–15 cm</div>
+            <div class="text-xs text-gray-600">Til DIN sovestilling</div>
+          </div>
+        </div>
+        <div class="absolute -top-4 -right-4 bg-nattlig text-white rounded-full px-4 py-2 font-bold text-sm shadow-lg">
+          ★★★★★ 4,8/5
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar !py-6 md:!py-8">
+  <div class="container-wide">
+    <div class="flex flex-wrap items-center justify-around gap-4 md:gap-8 text-center">
+      <div class="trust-item"><span class="text-nattlig">★★★★★</span><span>4,8 / 5 basert på 47 anmeldelser</span></div>
+      <div class="trust-item">🇳🇴 Bygd for norske netter</div>
+      <div class="trust-item">🛏️ Justerbar 5–15 cm</div>
+      <div class="trust-item">💧 Hudvennlige materialer</div>
+      <div class="trust-item">🚚 Gratis frakt og retur</div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF — flyttet HØYT -->
+<section class="bg-white !py-12 md:!py-16">
+  <div class="container-wide">
+    <div class="text-center mb-10">
+      <h2 class="font-display font-extrabold text-2xl md:text-4xl mb-3">Hva andre sover på</h2>
+      <p class="text-gray-600">Verifiserte anmeldelser fra de første kundene.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+
+      <div class="card !p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="stars text-base">★★★★★</span>
+          <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">✓ Verifisert</span>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">"Den første puta jeg har kunnet stille inn selv. Tok ut en god del fyll så høyden ble riktig for sidesoving — og endelig våkner jeg uten stiv nakke."</p>
+        <div class="flex items-center justify-between text-sm">
+          <span class="font-semibold">Marit, 47</span>
+          <span class="text-gray-400">3. mai</span>
+        </div>
+      </div>
+
+      <div class="card !p-6 md:translate-y-4">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="stars text-base">★★★★★</span>
+          <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">✓ Verifisert</span>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">"Jeg har prøvd 6 puter på 3 år. Tempur, IKEA, Coop. Denne er den første jeg ikke har sendt tilbake. Endelig en pute som passer min nakke, ikke omvendt."</p>
+        <div class="flex items-center justify-between text-sm">
+          <span class="font-semibold">Lars, 51</span>
+          <span class="text-gray-400">28. apr</span>
+        </div>
+      </div>
+
+      <div class="card !p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="stars text-base">★★★★★</span>
+          <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">✓ Verifisert</span>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">"90 dager prøv hjemme — trengte ikke 90. Visste etter 3 netter. Jeg hadde aldri innsett hvor mye den gamle puta mi gjorde meg vondt."</p>
+        <div class="flex items-center justify-between text-sm">
+          <span class="font-semibold">Inga, 38</span>
+          <span class="text-gray-400">22. apr</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VS VANLIG PUTE -->
+<section id="hvordan" class="bg-nattlig-soft">
+  <div class="container-narrow">
+    <div class="text-center mb-12">
+      <span class="inline-block text-nattlig text-sm font-bold uppercase tracking-wider mb-3">Vs. vanlig pute</span>
+      <h2 class="font-display font-extrabold text-3xl md:text-5xl mb-4">
+        Du vet hvilken pute vi snakker om.
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        Den gulnete dunpuden i skapet. Eller den polyester-puta du klemmer hver natt og lurer på om det er på tide å bytte.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+      <div>
+        <div class="space-y-5 text-lg text-gray-700 leading-relaxed">
+          <p><strong>Du sover på siden,</strong> men puta er for høy. Hodet kommer i feil vinkel. Stiv nakke om morgenen.</p>
+          <p><strong>Du vrir deg på rygg,</strong> men nå er puta for hard. Du legger en arm under hodet for å kompensere.</p>
+          <p><strong>Du stryker den,</strong> klemmer den, bretter den i to. Den er fortsatt feil.</p>
+          <p class="text-nattlig font-semibold text-xl pt-2">Vanlige puter har én form. Én høyde. Én fasthet. Du må venne deg til den.</p>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-xl">
+        <img src="bilder/kald-varm-side.jpg" alt="Nattlig-puten med to sider" class="w-full">
+      </div>
+    </div>
+
+    <!-- 3 mekanisme-pilarer -->
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card">
+        <div class="text-4xl mb-4">🛏️</div>
+        <h3 class="font-display font-bold text-xl mb-2">Du tar ut fyll</h3>
+        <p class="text-gray-600 leading-relaxed">Nattlig-puten kommer fylt med minneskum. Du tar ut akkurat så mye du trenger — til høyden og fastheten passer DIN nakke.</p>
+      </div>
+      <div class="card">
+        <div class="text-4xl mb-4">😴</div>
+        <h3 class="font-display font-bold text-xl mb-2">Alle sovestillinger</h3>
+        <p class="text-gray-600 leading-relaxed">Sidesover trenger mer fyll. Ryggsover mindre. Magesover minst. En pute. Tilpasses deg — ikke omvendt.</p>
+      </div>
+      <div class="card">
+        <div class="text-4xl mb-4">❄️</div>
+        <h3 class="font-display font-bold text-xl mb-2">Kjøligere putevar</h3>
+        <p class="text-gray-600 leading-relaxed">Putevaret har en kjøligere side. Behagelig svalere når du sover varmt — uten å være ekstrem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JUSTERBARHETS-DEMO -->
+<section class="bg-white">
+  <div class="container-narrow">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="rounded-2xl overflow-hidden shadow-xl">
+        <img src="bilder/hender-foam.jpg" alt="Hender holder minneskum-fyll fra Nattlig-puten" class="w-full aspect-[4/5] object-cover">
+      </div>
+      <div>
+        <span class="inline-block text-nattlig text-sm font-bold uppercase tracking-wider mb-3">Slik tilpasser du</span>
+        <h2 class="font-display font-extrabold text-3xl md:text-5xl mb-6">
+          Bare ta ut det du ikke trenger.
+        </h2>
+        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+          Puten kommer fylt og klar. For lav? Den er ikke det fra start. For høy? Ta ut fyll til den passer deg. Du justerer på 30 sekunder, og kan justere på nytt når du vil.
+        </p>
+        <div class="space-y-4 mb-8">
+          <div class="flex gap-4">
+            <div class="bg-nattlig text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+            <div>Åpne puten på siden</div>
+          </div>
+          <div class="flex gap-4">
+            <div class="bg-nattlig text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+            <div><strong>Ta ut</strong> minneskum-fyll til høyden passer din sovestilling</div>
+          </div>
+          <div class="flex gap-4">
+            <div class="bg-nattlig text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+            <div>Lukk og test. Juster når du vil.</div>
+          </div>
+        </div>
+        <div class="bg-nattlig-soft rounded-xl p-5 border border-nattlig">
+          <div class="text-sm font-semibold mb-3">Anbefalt høyde:</div>
+          <div class="grid grid-cols-3 gap-2 text-center text-sm">
+            <div><div class="font-bold text-nattlig">12–14 cm</div><div class="text-gray-600">Sidesover</div></div>
+            <div><div class="font-bold text-nattlig">8–10 cm</div><div class="text-gray-600">Ryggsover</div></div>
+            <div><div class="font-bold text-nattlig">5–7 cm</div><div class="text-gray-600">Magesover</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVATAR-VELGER -->
+<section class="bg-nattlig-soft">
+  <div class="container-narrow">
+    <div class="text-center mb-12">
+      <h2 class="font-display font-extrabold text-3xl md:text-5xl mb-4">Hva er ditt søvn-problem?</h2>
+      <p class="text-lg text-gray-600">Velg det som ligner mest på deg — vi har laget en egen side for hver.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5">
+      <a href="varme-nattsovere.html" class="avatar-card">
+        <div class="text-4xl mb-4">🌡️</div>
+        <h3 class="font-display font-bold text-xl mb-3">Varm hele natten</h3>
+        <p class="text-gray-600 mb-4 leading-relaxed">Du svetter, flipper puta, våkner gjennomvåt. Kjøligere putevar gjør natta enklere.</p>
+        <span class="text-nattlig font-semibold inline-flex items-center gap-1">Les mer <span>→</span></span>
+      </a>
+      <a href="overgangsalder.html" class="avatar-card">
+        <div class="text-4xl mb-4">♀️</div>
+        <h3 class="font-display font-bold text-xl mb-3">Overgangsalder</h3>
+        <p class="text-gray-600 mb-4 leading-relaxed">Hetetokter ødelegger søvnen. Du trenger en pute som ikke gjør det verre.</p>
+        <span class="text-nattlig font-semibold inline-flex items-center gap-1">Les mer <span>→</span></span>
+      </a>
+      <a href="vond-sovestilling.html" class="avatar-card">
+        <div class="text-4xl mb-4">😣</div>
+        <h3 class="font-display font-bold text-xl mb-3">Aldri god sovestilling</h3>
+        <p class="text-gray-600 mb-4 leading-relaxed">For høy. For lav. For hard. Du vrir deg natta lang. Stiv nakke neste morgen.</p>
+        <span class="text-nattlig font-semibold inline-flex items-center gap-1">Les mer <span>→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BUY BOX -->
+<section id="kjop" class="bg-white">
+  <div class="container-narrow">
+    <div class="grid md:grid-cols-2 gap-12">
+      <div>
+        <div class="rounded-2xl overflow-hidden mb-3 bg-nattlig-soft">
+          <img id="main-product-img" src="bilder/pute-bestselger.jpg" alt="Nattlig-puten" class="w-full aspect-square object-cover">
+        </div>
+        <div class="grid grid-cols-5 gap-2">
+          <img src="bilder/pute-bestselger.jpg" alt="" class="thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-nattlig" onclick="document.getElementById('main-product-img').src=this.src; document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
+          <img src="bilder/lifestyle-kvinne.jpg" alt="" class="thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('main-product-img').src=this.src; document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
+          <img src="bilder/detalj-tag.png" alt="" class="thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('main-product-img').src=this.src; document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
+          <img src="bilder/hender-foam.jpg" alt="" class="thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('main-product-img').src=this.src; document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
+          <img src="bilder/kald-varm-side.jpg" alt="" class="thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('main-product-img').src=this.src; document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
+        </div>
+      </div>
+
+      <div>
+        <div class="text-sm text-nattlig font-semibold uppercase tracking-wider mb-2">Justerbar minneskum-pute</div>
+        <h2 class="font-display font-extrabold text-3xl md:text-4xl mb-3">Nattlig-puten</h2>
+        <div class="flex items-center gap-3 mb-6">
+          <span class="stars text-lg">★★★★★</span>
+          <span class="text-sm text-gray-600">4,8 av 5 (47 anmeldelser)</span>
+        </div>
+
+        <div class="variant-group mb-6">
+          <div class="text-sm font-semibold mb-3 uppercase tracking-wide text-gray-500">Velg antall</div>
+          <label class="variant-option">
+            <input type="radio" name="variant">
+            <div><div class="variant-name font-semibold">1 stk</div><div class="text-sm text-gray-600">Én pute</div></div>
+            <div class="text-lg font-bold">899 kr</div>
+          </label>
+          <label class="variant-option selected">
+            <span class="badge-popular">Populær</span>
+            <input type="radio" name="variant" checked>
+            <div><div class="variant-name font-semibold">2 stk (par)</div><div class="text-sm text-gray-600">Spar 600 kr — vanligst valg</div></div>
+            <div><div class="text-lg font-bold">1 198 kr</div><div class="text-xs text-gray-500 line-through">1 798 kr</div></div>
+          </label>
+          <label class="variant-option">
+            <input type="radio" name="variant">
+            <div><div class="variant-name font-semibold">1 stk + ekstra trekk</div><div class="text-sm text-gray-600">Bytt ut når du vasker</div></div>
+            <div class="text-lg font-bold">1 099 kr</div>
+          </label>
+        </div>
+
+        <button data-add-to-cart class="btn-primary w-full mb-3">
+          Legg i handlekurv
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+        <button class="btn-vipps w-full mb-6" onclick="addToCart('Nattlig-puten', 1); showToast('Vipps-checkout (mock)')">
+          ⚡ Vipps Hurtigkjøp
+        </button>
+
+        <div class="space-y-2.5 text-sm text-gray-600">
+          <div class="flex items-center gap-2"><span class="text-nattlig">✓</span> Gratis frakt over hele Norge</div>
+          <div class="flex items-center gap-2"><span class="text-nattlig">✓</span> 90 netters prøvenetter</div>
+          <div class="flex items-center gap-2"><span class="text-nattlig">✓</span> Sendes innen 24 timer (alle ordrer før 14:00)</div>
+          <div class="flex items-center gap-2"><span class="text-nattlig">✓</span> Vipps · Klarna · Visa · MasterCard · Apple Pay</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KREATIV TESTIMONIAL-VEGG (masonry) -->
+<section class="bg-nattlig-soft">
+  <div class="container-wide">
+    <div class="text-center mb-12">
+      <span class="inline-block text-nattlig text-sm font-bold uppercase tracking-wider mb-3">Anmeldelser</span>
+      <h2 class="font-display font-extrabold text-3xl md:text-5xl mb-4">47 har testet. Slik gikk det.</h2>
+      <div class="flex items-center justify-center gap-3">
+        <span class="stars text-2xl">★★★★★</span>
+        <span class="text-lg font-semibold">4,8 / 5</span>
+      </div>
+    </div>
+
+    <div class="columns-1 md:columns-2 lg:columns-3 gap-5 max-w-5xl mx-auto">
+
+      <div class="card !p-6 mb-5 break-inside-avoid">
+        <div class="stars mb-2 text-base">★★★★★</div>
+        <p class="text-gray-700 leading-relaxed mb-3 italic">"Tok ut akkurat den fyllmengden jeg trenger for sidesoving — og ferdig."</p>
+        <div class="flex items-center justify-between text-sm">
+          <span class="font-semibold">Henrik, 41</span>
+          <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">✓ Verifisert</span>
+        </div>
+      </div>
+
+      <div class="card !p-6 mb-5 break-inside-avoid bg-nattlig text-white">
+        <div class="text-yellow-300 mb-3 text-base">★★★★★</div>
+        <p class="leading-relaxed mb-4 text-lg italic">"Jeg har vært på evig putejakt. Den her er bevist det. 47 år. Først nå sover jeg uten stiv nakke om morgenen."</p>
+        <div class="flex items-center justify-between text-sm">
+          <span class="font-semibold">Marit, 47</span>
+          <span class="opacity-75">3. mai</span>
+        </div>
+      </div>
+
+      <div class="card !p-6 mb-5 break-inside-avoid">
+        <div class="stars mb-2 text-base">★★★★☆</div>
+        <p class="text-gray-700 leading-relaxed mb-3 italic">"Den kjøligere siden er behagelig — ikke is-kald, men merkbart svalere. Det holder for meg."</p>
+        <div class="flex items-center justify-between text-sm">
+          <span class="font-semibold">Bente, 53</span>
+          <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">✓ Verifisert</span>
+        </div>
+      </div>
+
+      <div class="card !p-6 mb-5 break-inside-avoid">
+        <div class="stars mb-2 text-base">★★★★★</div>
+        <p class="text-gray-700 leading-relaxed mb-3 italic">"Jeg er 195 cm og har brede skuldre. Tok ut nesten halvparten av fyllet og hodet sank ned i akkurat riktig høyde. Aldri sovet bedre."</p>
+        <div class="flex items-center justify-between text-sm">
+          <span class="font-semibold">Lars, 51</span>
+          <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">✓ Verifisert</span>
+        </div>
+      </div>
+
+      <div class="card !p-6 mb-5 break-inside-avoid">
+        <div class="stars mb-2 text-base">★★★★★</div>
+        <p class="text-gray-700 leading-relaxed mb-3 italic">"Mannen min stjeler den. Bestilte par. Spar 600 + ingen krangling om puta."</p>
+        <div class="flex items-center justify-between text-sm">
+          <span class="font-semibold">Ingrid, 45</span>
+          <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">✓ Verifisert</span>
+        </div>
+      </div>
+
+      <div class="card !p-6 mb-5 break-inside-avoid">
+        <div class="stars mb-2 text-base">★★★★★</div>
+        <p class="text-gray-700 leading-relaxed mb-3 italic">"90 dager prøv hjemme. Trengte ikke 90 — visste etter 3 netter. Returnerte den gamle puta mi til Røde Kors uka etter."</p>
+        <div class="flex items-center justify-between text-sm">
+          <span class="font-semibold">Inga, 38</span>
+          <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">✓ Verifisert</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="pute.html" class="btn-secondary">Se alle anmeldelser →</a>
+    </div>
+  </div>
+</section>
+
+<!-- RISK REVERSAL -->
+<section class="bg-nattlig text-white">
+  <div class="container-narrow text-center">
+    <h2 class="font-display font-extrabold text-3xl md:text-5xl mb-6">90 netter. Så bestemmer du.</h2>
+    <p class="text-lg md:text-xl mb-12 opacity-90 max-w-2xl mx-auto leading-relaxed">
+      Sov på den i 90 dager. Hvis du ikke er fornøyd — returnér gratis og få pengene tilbake. Vi gjør det enkelt.
+    </p>
+    <div class="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+      <div>
+        <div class="text-5xl mb-3">🚚</div>
+        <div class="font-bold text-lg mb-1">Gratis frakt</div>
+        <div class="text-sm opacity-80">Hele veien — begge veier</div>
+      </div>
+      <div>
+        <div class="text-5xl mb-3">💰</div>
+        <div class="font-bold text-lg mb-1">Pengene tilbake</div>
+        <div class="text-sm opacity-80">Hvis du angrer innen 90 netter</div>
+      </div>
+      <div>
+        <div class="text-5xl mb-3">📦</div>
+        <div class="font-bold text-lg mb-1">Sendes innen 24t</div>
+        <div class="text-sm opacity-80">Bestill før 14:00 — sendes i dag</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-white">
+  <div class="container-narrow" style="max-width: 800px">
+    <div class="text-center mb-12">
+      <h2 class="font-display font-extrabold text-3xl md:text-5xl mb-4">Spørsmål du kanskje har</h2>
+      <p class="text-lg text-gray-600">De vanligste først. <a href="faq.html" class="text-nattlig font-semibold">Se alle 20 spørsmål →</a></p>
+    </div>
+    <div class="bg-white rounded-2xl p-6 md:p-10 shadow-sm border border-nattlig">
+      <details>
+        <summary>Hvor mye fyll skal jeg ta ut?</summary>
+        <p>Det avhenger av sovestillingen. Sidesovere har ofte 12–14 cm høyde. Ryggsovere 8–10 cm. Magesovere 5–7 cm. Du kan justere når du vil — det er ingen riktig svar utenom det som passer DEG.</p>
+      </details>
+      <details>
+        <summary>Hvor mye kjølig er den kjøligere siden?</summary>
+        <p>Behagelig svalere, ikke ekstrem. Putevaret har en kjøligere overflate på den ene siden — du merker forskjellen, men det er ikke is-kald. Tanken er at du sover varmere → du vender til den kjølige siden.</p>
+      </details>
+      <details>
+        <summary>Hvor lenge tar det før jeg merker forskjell?</summary>
+        <p>De fleste rapporterer endring innen 7–14 netter. Memory foam har en kort innkjøringsperiode der formen tilpasser seg deg. Gi puta minst 14 dager før du dømmer.</p>
+      </details>
+      <details>
+        <summary>Lukter den kjemisk når den kommer?</summary>
+        <p>Vi lufter alle puter 7 dager før forsendelse. Det skal ikke lukte ved levering. Hvis du fortsatt merker lukt — returnér gratis. Vi har null toleranse for off-gassing.</p>
+      </details>
+      <details>
+        <summary>Hva hvis jeg ikke liker den?</summary>
+        <p>90 netter prøv hjemme. Returnér gratis og få pengene tilbake. Ingen spørsmål.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="bg-nattlig-soft">
+  <div class="container-narrow text-center">
+    <h2 class="font-display font-extrabold text-3xl md:text-5xl mb-4">Klar for en pute som passer DEG?</h2>
+    <p class="text-lg text-gray-600 mb-8">Bestill innen 14:00 — sendes samme dag.</p>
+    <a href="#kjop" class="btn-primary text-lg !px-10 !py-5">
+      Bestill Nattlig-puten — 899 kr
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </a>
+    <p class="text-sm text-gray-500 mt-6">90 netter prøv hjemme · Gratis frakt og retur · Vipps + Klarna</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white">
+  <div class="container-wide py-16">
+    <div class="grid md:grid-cols-4 gap-8">
+      <div>
+        <img src="bilder/wordmark-light.jpg" alt="Nattlig" class="h-12 mb-4 rounded">
+        <p class="text-sm text-gray-400 leading-relaxed">Norsk-bygget pute du kan tilpasse til DIN nakke. På siden, rygg eller mage.</p>
+      </div>
+      <div>
+        <div class="font-display font-bold mb-4">Puten</div>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="pute.html" class="hover:text-white">Nattlig-puten</a></li>
+          <li><a href="pute.html#bundle" class="hover:text-white">2-pakke (par)</a></li>
+          <li><a href="varme-nattsovere.html" class="hover:text-white">For varme nattsovere</a></li>
+          <li><a href="overgangsalder.html" class="hover:text-white">Overgangsalder</a></li>
+          <li><a href="vond-sovestilling.html" class="hover:text-white">Vond sovestilling</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-display font-bold mb-4">Selskap</div>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="om.html" class="hover:text-white">Om Nattlig</a></li>
+          <li><a href="kontakt.html" class="hover:text-white">Kontakt</a></li>
+          <li><a href="faq.html" class="hover:text-white">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-display font-bold mb-4">Hjelp</div>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="frakt-og-retur.html" class="hover:text-white">Frakt og retur</a></li>
+          <li><a href="frakt-og-retur.html#garanti" class="hover:text-white">90 dagers garanti</a></li>
+          <li><a href="kontakt.html" class="hover:text-white">hei@nattlig.no</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-gray-500">
+      <div>© 2026 Nattlig · Org.nr [TBD]</div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white">Vilkår</a>
+        <a href="#" class="hover:text-white">Personvern</a>
+        <a href="#" class="hover:text-white">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner">
+  <div>
+    <div class="font-bold text-base mb-1">🍪 Vi bruker cookies</div>
+    <p class="text-gray-600">For statistikk og bedre annonser. Du kan endre valgene når som helst.</p>
+  </div>
+  <div class="flex gap-2">
+    <button data-cookie-reject class="btn-secondary !py-2 !px-4 !text-sm flex-1">Bare nødvendige</button>
+    <button data-cookie-accept class="btn-primary !py-2 !px-4 !text-sm flex-1">Godta alle</button>
+  </div>
+</div>
+
+<div class="demo-notice">PROTOTYPE · Ikke ekte butikk</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

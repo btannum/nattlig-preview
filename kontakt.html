@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt — Vi svarer samme dag | Nattlig</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="sticky top-0 bg-white z-40 header-shadow transition-all">
+  <div class="container-wide flex items-center justify-between py-4">
+    <a href="index.html"><img src="bilder/wordmark-dark.jpg" alt="Nattlig" class="h-10 md:h-12"></a>
+    <nav class="desktop-nav items-center gap-8">
+      <a href="pute.html" class="text-sm font-medium hover:text-nattlig">Puten</a>
+      <a href="om.html" class="text-sm font-medium hover:text-nattlig">Om</a>
+      <a href="faq.html" class="text-sm font-medium hover:text-nattlig">FAQ</a>
+      <a href="kontakt.html" class="text-sm font-medium text-nattlig">Kontakt</a>
+    </nav>
+    <a href="pute.html" class="btn-primary !py-2 !px-4 !text-sm">Bestill</a>
+  </div>
+</header>
+
+<section class="bg-nattlig-soft pt-16 pb-12">
+  <div class="container-narrow text-center" style="max-width:700px">
+    <h1 class="font-display font-extrabold text-4xl md:text-5xl mb-4">Vi svarer samme dag.</h1>
+    <p class="text-lg text-gray-600">E-post mandag-fredag (responstid under 4 timer). Chat 9-17. Når du er fornøyd: la oss få vite. Når du ikke er det: la oss få vite raskere.</p>
+  </div>
+</section>
+
+<section class="bg-white">
+  <div class="container-narrow" style="max-width:1000px">
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <div>
+        <h2 class="font-display font-bold text-2xl mb-6">Skriv til oss</h2>
+        <form onsubmit="event.preventDefault(); showToast('Melding sendt (mock — ingen ekte e-post)'); this.reset();" class="space-y-4">
+          <div>
+            <label class="block text-sm font-semibold mb-2">Navn</label>
+            <input required type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-nattlig focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2">E-post</label>
+            <input required type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-nattlig focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2">Hva gjelder det?</label>
+            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-nattlig focus:outline-none">
+              <option>Spørsmål om produktet</option>
+              <option>Bestillingsstatus</option>
+              <option>Retur eller bytte</option>
+              <option>Tilbakemelding</option>
+              <option>Annet</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2">Melding</label>
+            <textarea required rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-nattlig focus:outline-none"></textarea>
+          </div>
+          <label class="flex items-start gap-3 text-sm text-gray-600">
+            <input type="checkbox" required class="mt-1">
+            <span>Jeg samtykker til at Nattlig kan kontakte meg per e-post om denne henvendelsen (GDPR)</span>
+          </label>
+          <button type="submit" class="btn-primary w-full">Send melding →</button>
+        </form>
+      </div>
+
+      <div>
+        <h2 class="font-display font-bold text-2xl mb-6">Andre kanaler</h2>
+        <div class="space-y-5">
+          <div class="card !p-6">
+            <div class="flex items-start gap-4">
+              <div class="text-3xl">📧</div>
+              <div>
+                <div class="font-bold text-lg mb-1">E-post</div>
+                <a href="mailto:hei@nattlig.no" class="text-nattlig">hei@nattlig.no</a>
+                <p class="text-sm text-gray-600 mt-2">Vi svarer innen 4 timer (mandag-fredag).</p>
+              </div>
+            </div>
+          </div>
+          <div class="card !p-6">
+            <div class="flex items-start gap-4">
+              <div class="text-3xl">💬</div>
+              <div>
+                <div class="font-bold text-lg mb-1">Chat</div>
+                <p class="text-sm text-gray-600">Klikk på chat-bobla nederst til høyre (åpen 9-17).</p>
+              </div>
+            </div>
+          </div>
+          <div class="card !p-6">
+            <div class="flex items-start gap-4">
+              <div class="text-3xl">📱</div>
+              <div>
+                <div class="font-bold text-lg mb-1">Sosiale medier</div>
+                <p class="text-sm text-gray-600 mb-2"><a href="#" class="text-nattlig">Instagram</a> · <a href="#" class="text-nattlig">Facebook</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-nattlig-soft rounded-xl p-6 text-sm text-gray-600">
+            <strong class="text-gray-900">Adresse:</strong><br>
+            Nattlig<br>
+            [Bedriftsadresse — TBD]<br>
+            Org.nr: [TBD]
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-white py-12">
+  <div class="container-wide text-center text-sm text-gray-400">
+    <img src="bilder/wordmark-light.jpg" alt="Nattlig" class="h-12 mx-auto mb-4 rounded">
+    <div class="flex justify-center gap-6 mb-4">
+      <a href="pute.html" class="hover:text-white">Puten</a>
+      <a href="om.html" class="hover:text-white">Om</a>
+      <a href="faq.html" class="hover:text-white">FAQ</a>
+      <a href="frakt-og-retur.html" class="hover:text-white">Frakt og retur</a>
+    </div>
+    <div>© 2026 Nattlig</div>
+  </div>
+</footer>
+
+<div class="demo-notice">PROTOTYPE</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
