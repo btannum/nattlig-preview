@@ -13,36 +13,6 @@
     .lp-hero { background: linear-gradient(180deg, #f8f9fc 0%, #fff 100%); }
     .empati-blokk { border-left: 4px solid var(--nattlig-primary); padding-left: 1.5rem; }
 
-    /* Sovestilling-velger */
-    .pos-tabs { display:flex; gap:.5rem; flex-wrap:wrap; justify-content:center; }
-    .pos-tab {
-      padding: .75rem 1.5rem; border-radius: 9999px; border: 2px solid var(--nattlig-border);
-      background:white; font-weight:600; cursor:pointer; transition: all .2s; font-size:.95rem;
-    }
-    .pos-tab:hover { border-color: var(--nattlig-primary); }
-    .pos-tab.active { background: var(--nattlig-primary); color:white; border-color: var(--nattlig-primary); }
-    .pos-content { display:none; }
-    .pos-content.active { display:grid; grid-template-columns: 1fr; gap:1rem; align-items:center; }
-    @media (min-width: 768px) { .pos-content.active { grid-template-columns: 180px 1fr; gap:1.5rem; } }
-    .pos-illu {
-      background: linear-gradient(135deg, #f0f4ff 0%, #e3e9f7 100%);
-      border-radius: .75rem; aspect-ratio: 4/3; display:flex; align-items:center; justify-content:center;
-    }
-    .pos-illu svg { width: 80%; height: auto; }
-
-    /* Sammenligningsvisual placeholder */
-    .compare-card {
-      background:white; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-      display:flex; flex-direction:column; gap:1rem;
-    }
-    .compare-row { display:grid; grid-template-columns: 1fr 1fr; gap: .5rem; }
-    .compare-half {
-      aspect-ratio: 4/3; border-radius: .5rem; display:flex; align-items:center; justify-content:center;
-      font-size:.875rem; padding:1rem; text-align:center;
-    }
-    .compare-bad  { background:#fef2f2; color:#991b1b; border:1px dashed #fca5a5; }
-    .compare-good { background:#ecfdf5; color:#065f46; border:1px dashed #6ee7b7; }
-
     /* Us vs them table */
     .vs-table { width:100%; border-collapse: separate; border-spacing: 0; }
     .vs-table th { background: var(--nattlig-bg); padding: 1rem; font-size:.875rem; font-weight:700; text-align:center; }
@@ -203,92 +173,7 @@
   </div>
 </section>
 
-<!-- ───────────────────────────────────── 5. SOVESTILLING-VELGER (INTERAKTIV) ───────────────────────────────────── -->
-<section class="bg-nattlig-soft !py-12" id="hvordan">
-  <div class="container-narrow" style="max-width:760px">
-    <div class="text-center mb-6">
-      <h2 class="font-display font-extrabold text-2xl md:text-3xl mb-2">Hvordan sover du?</h2>
-      <p class="text-gray-600 text-sm">Hvor mye fyll du tar ut, avhenger av sovestillingen.</p>
-    </div>
-
-    <div class="pos-tabs mb-5">
-      <button class="pos-tab active" data-pos="side">Sidesover</button>
-      <button class="pos-tab" data-pos="rygg">Ryggsover</button>
-      <button class="pos-tab" data-pos="mage">Magesover</button>
-      <button class="pos-tab" data-pos="bytter">Bytter</button>
-    </div>
-
-    <div class="pos-content active bg-white rounded-2xl p-6 shadow-sm" id="pos-side">
-      <div class="pos-illu" style="background:none; padding:0">
-        <img src="bilder/sovestilling-side.png" alt="Sidesover" class="w-full h-full object-cover rounded-lg">
-      </div>
-      <div>
-        <div class="flex items-baseline gap-4 mb-2 flex-wrap">
-          <div class="font-display font-extrabold text-3xl text-nattlig">12–18 cm</div>
-          <div class="text-sm text-gray-500">anbefalt høyde · sidesover</div>
-        </div>
-        <p class="text-sm text-gray-700">Behold mesteparten av fyllet. Puten skal fylle gapet mellom hode og skulder slik at øre, skulder og hofte er på samme linje. Smale skuldre? Fjern 1–3 håndfuller.</p>
-      </div>
-    </div>
-
-    <div class="pos-content bg-white rounded-2xl p-6 shadow-sm" id="pos-rygg">
-      <div class="pos-illu" style="background:none; padding:0">
-        <img src="bilder/sovestilling-rygg.png" alt="Ryggsover" class="w-full h-full object-cover rounded-lg">
-      </div>
-      <div>
-        <div class="flex items-baseline gap-4 mb-2 flex-wrap">
-          <div class="font-display font-extrabold text-3xl text-nattlig">11–13 cm</div>
-          <div class="text-sm text-gray-500">anbefalt høyde · ryggsover</div>
-        </div>
-        <p class="text-sm text-gray-700">Fjern 4–6 håndfuller. Sjekk at haken ikke trekkes mot brystet — da er puten for høy. Du skal ha lett støtte i nakkesvingen, ikke et puff under bakhodet.</p>
-      </div>
-    </div>
-
-    <div class="pos-content bg-white rounded-2xl p-6 shadow-sm" id="pos-mage">
-      <!-- TODO: erstatt SVG med ekte bilde fra Higgsfield (magesover-positur fra siden) -->
-      <div class="pos-illu">
-        <svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
-          <rect y="105" width="240" height="35" fill="#d8dff0"/>
-          <rect x="15" y="92" width="55" height="13" rx="6" fill="#a8b2dd"/>
-          <circle cx="42" cy="92" r="14" fill="#5e6ea8"/>
-          <rect x="56" y="92" width="170" height="15" rx="7" fill="#5e6ea8"/>
-        </svg>
-      </div>
-      <div>
-        <div class="flex items-baseline gap-4 mb-2 flex-wrap">
-          <div class="font-display font-extrabold text-3xl text-nattlig">5–10 cm</div>
-          <div class="text-sm text-gray-500">anbefalt høyde · magesover</div>
-        </div>
-        <p class="text-sm text-gray-700">Fjern 6–10 håndfuller. En høy pute tvinger nakken oppover. Mange magesovere sover bedre helt uten pute under hodet — bruk Nattlig under hoften for ryggstøtte istedet.</p>
-      </div>
-    </div>
-
-    <div class="pos-content bg-white rounded-2xl p-6 shadow-sm" id="pos-bytter">
-      <!-- TODO: erstatt SVG med ekte bilde fra Higgsfield (rotasjons-illustrasjon eller dobbel-eksponering) -->
-      <div class="pos-illu">
-        <svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
-          <rect y="105" width="240" height="35" fill="#d8dff0"/>
-          <rect x="20" y="75" width="75" height="30" rx="9" fill="#a8b2dd"/>
-          <circle cx="58" cy="65" r="17" fill="#5e6ea8" opacity="0.45"/>
-          <path d="M75 82 Q140 82 165 105 L115 105 Z" fill="#5e6ea8" opacity="0.45"/>
-          <circle cx="58" cy="78" r="15" fill="#5e6ea8"/>
-          <rect x="71" y="86" width="155" height="18" rx="9" fill="#5e6ea8"/>
-          <path d="M195 30 A35 35 0 1 1 175 25" stroke="#7484C7" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <path d="M170 22 L175 25 L172 31" stroke="#7484C7" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <div>
-        <div class="flex items-baseline gap-4 mb-2 flex-wrap">
-          <div class="font-display font-extrabold text-3xl text-nattlig">Ca. 12 cm</div>
-          <div class="text-sm text-gray-500">anbefalt høyde · bytter posisjon</div>
-        </div>
-        <p class="text-sm text-gray-700">Juster for posisjonen du ligger mest i. Minneskumet former seg rundt hodet uansett, så samme høyde funker for flere stillinger. Sov 3–5 netter før du justerer.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ───────────────────────────────────── 6. 4-TRINNS JUSTERING ───────────────────────────────────── -->
+<!-- ───────────────────────────────────── 5. 4-TRINNS JUSTERING ───────────────────────────────────── -->
 <section class="bg-white">
   <div class="container-narrow">
     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -661,16 +546,5 @@
 <div class="demo-notice">PROTOTYPE · Ikke ekte butikk</div>
 
 <script src="assets/app.js"></script>
-<script>
-  // Sovestilling-velger
-  document.querySelectorAll('.pos-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      document.querySelectorAll('.pos-tab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.pos-content').forEach(c => c.classList.remove('active'));
-      tab.classList.add('active');
-      document.getElementById('pos-' + tab.dataset.pos).classList.add('active');
-    });
-  });
-</script>
 </body>
 </html>
