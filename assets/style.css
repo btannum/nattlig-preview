@@ -309,6 +309,175 @@ header.shrunk { padding-top: 0.5rem; padding-bottom: 0.5rem; }
   outline-offset: 2px;
 }
 
+/* Sale banner — top of page, scrolling */
+.sale-banner {
+  background: linear-gradient(90deg, #1a1d2e 0%, #2a2d4a 100%);
+  color: white;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  position: relative;
+  z-index: 50;
+}
+.sale-banner-track {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-left 35s linear infinite;
+  padding: 10px 0;
+  width: max-content;
+}
+.sale-banner-track > span {
+  padding: 0 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sale-banner-track .sale-highlight {
+  color: #ffd966;
+  font-weight: 800;
+}
+.sale-banner:hover .sale-banner-track { animation-play-state: paused; }
+
+/* USP marquee */
+.usp-marquee {
+  background: white;
+  overflow: hidden;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--nattlig-border);
+  border-bottom: 1px solid var(--nattlig-border);
+}
+.usp-marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-left 45s linear infinite;
+  width: max-content;
+  gap: 3rem;
+}
+.usp-marquee-track > .usp-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: var(--nattlig-text);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.usp-marquee-track > .usp-item .usp-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--nattlig-bg);
+  border-radius: 50%;
+  font-size: 16px;
+}
+.usp-marquee:hover .usp-marquee-track { animation-play-state: paused; }
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Payment badges */
+.payment-badge {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 10px;
+  background: white;
+  border: 1px solid var(--nattlig-border);
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--nattlig-text);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.payment-badge.vipps { background: #ff5b24; color: white; border-color: #ff5b24; }
+.payment-badge.klarna { background: #ffa8cd; color: #17120f; border-color: #ffa8cd; }
+
+/* Buy-box price stack */
+.price-current {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 2.25rem;
+  line-height: 1;
+  color: var(--nattlig-text);
+}
+.price-old {
+  font-size: 1.125rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+}
+.price-save {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  background: #d1fae5;
+  color: #065f46;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Sale ribbon for variant */
+.variant-option .badge-sale {
+  position: absolute;
+  top: -10px;
+  right: 1rem;
+  background: linear-gradient(90deg, #f59e0b, #dc2626);
+  color: white;
+  padding: 0.25rem 0.875rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 8px -2px rgba(220, 38, 38, 0.3);
+}
+
+.variant-option-v2 {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border: 2px solid var(--nattlig-border);
+  border-radius: 0.875rem;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+  transition: all 0.15s;
+  position: relative;
+  background: white;
+}
+.variant-option-v2:hover { border-color: var(--nattlig-primary-light); }
+.variant-option-v2.selected {
+  border-color: var(--nattlig-primary);
+  background: rgba(116, 132, 199, 0.05);
+  box-shadow: 0 0 0 1px var(--nattlig-primary) inset;
+}
+.variant-option-v2 input { display: none; }
+.variant-option-v2 .radio-circle {
+  width: 18px; height: 18px;
+  border: 2px solid var(--nattlig-border);
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.variant-option-v2.selected .radio-circle { border-color: var(--nattlig-primary); }
+.variant-option-v2.selected .radio-circle::after {
+  content: '';
+  width: 9px; height: 9px;
+  background: var(--nattlig-primary);
+  border-radius: 50%;
+}
+
 /* Hide ad-hoc demo notice */
 .demo-notice {
   position: fixed;

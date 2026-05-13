@@ -35,7 +35,6 @@
     <a href="index.html" class="flex items-center"><img src="bilder/wordmark-dark.jpg" alt="Nattlig" class="h-10 md:h-12"></a>
     <nav class="desktop-nav items-center gap-8">
       <a href="pute.html" class="text-sm font-medium hover:text-nattlig">Puten</a>
-      <a href="om.html" class="text-sm font-medium hover:text-nattlig">Om</a>
       <a href="faq.html" class="text-sm font-medium hover:text-nattlig">FAQ</a>
     </nav>
     <div class="flex items-center gap-3">
@@ -173,15 +172,7 @@
 
       <!-- Mage -->
       <div class="bg-nattlig-soft rounded-2xl overflow-hidden shadow-sm">
-        <div class="w-full aspect-[4/3] bg-gradient-to-br from-nattlig-accent via-nattlig-soft to-white relative flex items-center justify-center">
-          <svg viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg" class="w-3/5 opacity-60">
-            <rect y="105" width="240" height="35" fill="#a8b2dd"/>
-            <rect x="15" y="92" width="55" height="13" rx="6" fill="#7484C7"/>
-            <circle cx="42" cy="92" r="14" fill="#5e6ea8"/>
-            <rect x="56" y="92" width="170" height="15" rx="7" fill="#5e6ea8"/>
-          </svg>
-          <span class="absolute bottom-3 right-4 text-[10px] uppercase tracking-wider text-nattlig font-semibold bg-white/80 px-2 py-1 rounded">Bilde kommer</span>
-        </div>
+        <img src="bilder/sovestilling-mage.png" alt="Magesover på Nattlig-puten" class="w-full aspect-[4/3] object-cover">
         <div class="p-5">
           <div class="flex items-baseline justify-between mb-1">
             <h3 class="font-display font-bold text-lg">Magesover</h3>
@@ -369,14 +360,19 @@
   <div class="container-wide">
     <div class="grid md:grid-cols-2 gap-12">
       <div>
-        <div class="rounded-2xl overflow-hidden bg-nattlig-soft mb-3">
-          <img id="lp-product-img" src="bilder/pute-bestselger.jpg" alt="Nattlig-puten" class="w-full aspect-square object-cover">
-        </div>
-        <div class="grid grid-cols-4 gap-2">
-          <img src="bilder/pute-bestselger.jpg" alt="" class="lp-thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-nattlig" onclick="document.getElementById('lp-product-img').src=this.src; document.querySelectorAll('.lp-thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
-          <img src="bilder/drommeskum-hender.jpg" alt="" class="lp-thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('lp-product-img').src=this.src; document.querySelectorAll('.lp-thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
-          <img src="bilder/drommeskum-hender.jpg" alt="" class="lp-thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('lp-product-img').src=this.src; document.querySelectorAll('.lp-thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
-          <img src="bilder/detalj-foam.jpg" alt="" class="lp-thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('lp-product-img').src=this.src; document.querySelectorAll('.lp-thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
+        <div class="sticky top-24">
+          <div class="rounded-2xl overflow-hidden bg-nattlig-soft mb-3">
+            <img id="lp-product-img" src="bilder/pute-bestselger.jpg" alt="Nattlig-puten" class="w-full aspect-square object-cover">
+          </div>
+          <div class="grid grid-cols-5 gap-2">
+            <img src="bilder/pute-bestselger.jpg" alt="" class="lp-thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-nattlig" onclick="document.getElementById('lp-product-img').src=this.src; document.querySelectorAll('.lp-thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
+            <img src="bilder/hero-kvinne-pute.png" alt="" class="lp-thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('lp-product-img').src=this.src; document.querySelectorAll('.lp-thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
+            <img src="bilder/drommeskum-hender.jpg" alt="" class="lp-thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('lp-product-img').src=this.src; document.querySelectorAll('.lp-thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
+            <video autoplay muted loop playsinline preload="auto" class="lp-thumb rounded-lg aspect-square object-cover border-2 border-transparent">
+              <source src="bilder/buybox-video.mov" type="video/mp4">
+            </video>
+            <img src="bilder/for-etter-sovestilling.png" alt="" class="lp-thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('lp-product-img').src=this.src; document.querySelectorAll('.lp-thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
+          </div>
         </div>
       </div>
 
@@ -520,7 +516,7 @@
   <div class="container-wide py-16">
     <div class="grid md:grid-cols-4 gap-8">
       <div>
-        <img src="bilder/wordmark-light.jpg" alt="Nattlig" class="h-12 mb-4 rounded">
+        <div class="font-display font-extrabold text-3xl md:text-4xl text-white mb-4 tracking-tight">Nattlig</div>
         <p class="text-sm text-gray-400 leading-relaxed">Norsk-bygget pute du kan tilpasse til DIN nakke.</p>
       </div>
       <div>
@@ -535,7 +531,6 @@
       <div>
         <div class="font-display font-bold mb-4">Selskap</div>
         <ul class="space-y-2 text-sm text-gray-400">
-          <li><a href="om.html" class="hover:text-white">Om Nattlig</a></li>
           <li><a href="kontakt.html" class="hover:text-white">Kontakt</a></li>
           <li><a href="faq.html" class="hover:text-white">FAQ</a></li>
         </ul>

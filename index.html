@@ -11,6 +11,20 @@
 </head>
 <body>
 
+<!-- SALE BANNER -->
+<div class="sale-banner">
+  <div class="sale-banner-track">
+    <span><span class="sale-highlight">🌞 SOMMERSALG</span> · Spar opp til 40% på Nattlig-puten</span>
+    <span>🚚 Gratis frakt fra norsk lager</span>
+    <span>🛏️ 90 netter fornøydgaranti</span>
+    <span>↩️ Enkel retur — ingen spørsmål</span>
+    <span><span class="sale-highlight">🌞 SOMMERSALG</span> · Spar opp til 40% på Nattlig-puten</span>
+    <span>🚚 Gratis frakt fra norsk lager</span>
+    <span>🛏️ 90 netter fornøydgaranti</span>
+    <span>↩️ Enkel retur — ingen spørsmål</span>
+  </div>
+</div>
+
 <!-- HEADER -->
 <header class="sticky top-0 bg-white z-40 header-shadow transition-all">
   <div class="container-wide flex items-center justify-between py-4">
@@ -19,7 +33,6 @@
     </a>
     <nav class="desktop-nav items-center gap-8">
       <a href="pute.html" class="text-sm font-medium hover:text-nattlig">Puten</a>
-      <a href="om.html" class="text-sm font-medium hover:text-nattlig">Om</a>
       <a href="faq.html" class="text-sm font-medium hover:text-nattlig">FAQ</a>
       <a href="kontakt.html" class="text-sm font-medium hover:text-nattlig">Kontakt</a>
     </nav>
@@ -34,7 +47,6 @@
   <div class="mobile-menu border-t border-nattlig md:hidden">
     <div class="container-wide py-4 flex flex-col gap-3">
       <a href="pute.html" class="text-base font-medium py-1">Puten</a>
-      <a href="om.html" class="text-base font-medium py-1">Om</a>
       <a href="faq.html" class="text-base font-medium py-1">FAQ</a>
       <a href="kontakt.html" class="text-base font-medium py-1">Kontakt</a>
     </div>
@@ -74,7 +86,7 @@
       <div class="relative">
         <img src="bilder/hero-kvinne-pute.png" alt="Kvinne med Nattlig-puten"
              class="rounded-2xl shadow-2xl w-full aspect-[4/5] object-cover">
-        <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 max-w-[280px]">
+        <div class="absolute bottom-4 left-4 md:bottom-6 md:left-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 max-w-[280px]">
           <div class="text-3xl">🛏️</div>
           <div>
             <div class="font-semibold text-sm">Justerbar 5–15 cm</div>
@@ -174,7 +186,7 @@
         </div>
       </div>
       <div class="rounded-2xl overflow-hidden shadow-xl">
-        <img src="bilder/par-drommeskum.png" alt="Par med Nattlig-puter og drømmeskum" class="w-full">
+        <img src="bilder/for-etter-sovestilling.png" alt="Før og etter Nattlig-puten — fra vondt til komfortabelt" class="w-full">
       </div>
     </div>
 
@@ -195,6 +207,15 @@
         <h3 class="font-display font-bold text-xl mb-2">Kjøligere putevar</h3>
         <p class="text-gray-600 leading-relaxed">Putevaret har en kjøligere side. Behagelig svalere når du sover varmt — uten å være ekstrem.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- HVORFOR NATTLIG — SAMMENLIGNING -->
+<section class="bg-white">
+  <div class="container-wide">
+    <div class="max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-xl">
+      <img src="bilder/hvorfor-nattlig.png" alt="Hvorfor velge Nattligputen — sammenligning vs vanlig pute" class="w-full block">
     </div>
   </div>
 </section>
@@ -287,7 +308,7 @@
           <img src="bilder/hero-kvinne-pute.png" alt="" class="thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('main-product-img').src=this.src; document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
           <img src="bilder/sovestilling-side.png" alt="" class="thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('main-product-img').src=this.src; document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
           <img src="bilder/sovestilling-rygg.png" alt="" class="thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('main-product-img').src=this.src; document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
-          <img src="bilder/drommeskum-hender.jpg" alt="" class="thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('main-product-img').src=this.src; document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
+          <img src="bilder/par-drommeskum.png" alt="" class="thumb rounded-lg cursor-pointer aspect-square object-cover border-2 border-transparent" onclick="document.getElementById('main-product-img').src=this.src; document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('border-nattlig')); this.classList.add('border-nattlig')">
         </div>
       </div>
 
@@ -361,12 +382,12 @@
         </div>
       </div>
 
-      <div class="card !p-6 mb-5 break-inside-avoid bg-nattlig text-white">
+      <div class="p-6 mb-5 break-inside-avoid bg-nattlig text-white rounded-2xl">
         <div class="text-yellow-300 mb-3 text-base">★★★★★</div>
-        <p class="leading-relaxed mb-4 text-lg italic">"Jeg har vært på evig putejakt. Den her er bevist det. 47 år. Først nå sover jeg uten stiv nakke om morgenen."</p>
+        <p class="leading-relaxed mb-4 text-lg italic">"Endelig en pute som passer meg. 47 år, sidesover. Tok ut omtrent halvparten av fyllet — sover bedre enn jeg har gjort på lenge."</p>
         <div class="flex items-center justify-between text-sm">
           <span class="font-semibold">Marit, 47</span>
-          <span class="opacity-75">3. mai</span>
+          <span class="opacity-75 text-xs bg-white/20 px-2 py-0.5 rounded-full">✓ Verifisert</span>
         </div>
       </div>
 
@@ -491,7 +512,7 @@
   <div class="container-wide py-16">
     <div class="grid md:grid-cols-4 gap-8">
       <div>
-        <img src="bilder/wordmark-light.jpg" alt="Nattlig" class="h-12 mb-4 rounded">
+        <div class="font-display font-extrabold text-3xl md:text-4xl text-white mb-4 tracking-tight">Nattlig</div>
         <p class="text-sm text-gray-400 leading-relaxed">Norsk-bygget pute du kan tilpasse til DIN nakke. På siden, rygg eller mage.</p>
       </div>
       <div>
@@ -507,7 +528,6 @@
       <div>
         <div class="font-display font-bold mb-4">Selskap</div>
         <ul class="space-y-2 text-sm text-gray-400">
-          <li><a href="om.html" class="hover:text-white">Om Nattlig</a></li>
           <li><a href="kontakt.html" class="hover:text-white">Kontakt</a></li>
           <li><a href="faq.html" class="hover:text-white">FAQ</a></li>
         </ul>
